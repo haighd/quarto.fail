@@ -1,0 +1,14 @@
+---
+title: "quarto_fail"
+format: html
+---
+
+```{r}
+f <- function() g()
+g <- function() h()
+h <- function() i()
+i <- function() stop("Error")
+```
+```{r}
+f()
+```
